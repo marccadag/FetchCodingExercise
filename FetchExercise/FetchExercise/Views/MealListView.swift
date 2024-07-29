@@ -29,6 +29,7 @@ struct MealListView: View {
     }
 }
 
+// MARK: - Meal Row View
 struct MealRowView: View {
     let meal: Meal
     
@@ -40,6 +41,7 @@ struct MealRowView: View {
     }
 }
 
+// MARK: - Meal Image View
 struct MealImageView: View {
     let urlString: String
     
