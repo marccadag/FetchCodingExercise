@@ -7,14 +7,17 @@
 
 import Foundation
 
+// MARK: - Network Client Protocol
 protocol NetworkClientProtocol {
     func fetchResponse<T: Decodable>(endpoint: String) async throws -> T
 }
 
+// MARK: - Network Client Error
 enum NetworkClientError: Error {
     case missingURL
 }
 
+// MARK: - Network Client
 class NetworkClient: NetworkClientProtocol {
     static let shared = NetworkClient()
     
